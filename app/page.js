@@ -1,5 +1,7 @@
 'use Client'
 import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -12,8 +14,10 @@ export default function Home() {
     <Navbar/>
     <Header/>
     <About/>
-    <Projects/>
     <Work/>
+    <Projects/>
+    <Contact/>
+    <Footer/>
     </>
   );
 }

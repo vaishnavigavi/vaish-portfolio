@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { workData, assets } from '@/assets/assets'
 import React from 'react'
+import tailwindConfig from '@/tailwind.config.mjs';
 
 const Work = () => {
   return (
@@ -10,7 +11,7 @@ const Work = () => {
 
         <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus delectus unde amet labore. Iusto, mollitia eos id exercitationem provident dolor?</p>
 
-        <div className='grid grid-cols-auto my-10 gap-5'>
+        <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5'>
             {workData.map((project,index)=>(
                 <div key={index} 
                 className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
@@ -20,18 +21,12 @@ const Work = () => {
                             <h2>{project.title}</h2>
                             <p>{project.description}</p>
                         </div>
-                        <div>
+                        <div className='border rounded-full border-blacck w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
                             <Image src={assets.send_icon} alt='send icon' className='w-5'/>
                         </div>
 
                     </div>
-                    <div>
-                        <h2>{project.title}</h2>
-                        <p>{project.description}</p>
-                    </div>
-                    <div>
-                        <Image src={assets.send_icon} alt='send icon' className='w-5'/>
-                    </div>
+                    
                 </div>
             ))}
         </div>

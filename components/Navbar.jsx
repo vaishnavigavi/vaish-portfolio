@@ -41,10 +41,10 @@ const Navbar = () => {
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50"} `}>
           <li><a className='font-Ovo' href="#top">Home</a></li>
-          <li><a className='font-Ovo' href="top">About me</a></li>
-          <li><a className='font-Ovo' href="top">Experience</a></li>
-          <li><a className='font-Ovo' href="top">Projects</a></li>
-          <li><a className='font-Ovo' href="top">Contact me</a></li>
+          <li><a className='font-Ovo' href="#about">About me</a></li>
+          <li><a className='font-Ovo' href="#work">Experience</a></li>
+          <li><a className='font-Ovo' href="#projects">Projects</a></li>
+          <li><a className='font-Ovo' href="#contact">Contact me</a></li>
         </ul>
         
 
@@ -67,11 +67,11 @@ const Navbar = () => {
             <div className='absolute right-6 top-6' onClick={closeMenu}>
                 <Image src={assets.close_black} alt="" className='w-5 cursor-pointer'/>
             </div>
-          <li><a className='font-Ovo' onClick={closeMenu} href="#top">Home</a></li>
+          <li><a className='font-Ovo' onClick={closeMenu} href="#top">frrccrHome</a></li>
           <li><a className='font-Ovo' onClick={closeMenu} href="#about">About me</a></li>
-          <li><a className='font-Ovo' onClick={closeMenu} href="top">Experience</a></li>
-          <li><a className='font-Ovo' onClick={closeMenu} href="top">Projects</a></li>
-          <li><a className='font-Ovo' onClick={closeMenu} href="top">Contact me</a></li>
+          <li><a className='font-Ovo' onClick={closeMenu} href="#work">Experience</a></li>
+          <li><a className='font-Ovo' onClick={closeMenu} href="#projects">Projects</a></li>
+          <li><a className='font-Ovo' onClick={closeMenu} href="#contact"> dont Contdchgfhjhdfact me</a></li>
         </ul>
 
 
