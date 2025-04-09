@@ -4,12 +4,13 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: ['dark:bg-darkTheme'],
   theme: {
     extend: {
       colors: {
         lightHover: '#fcf4ff',
         darkHover: '#2a004a',
-        darkTheme: "#11001F"
+        darkTheme: '#11001F'
       },
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],
@@ -24,6 +25,6 @@ export default {
       }
     },
   },
-  darkMode: 'class', // use class-based dark mode
-  plugins: [],
+  darkMode: 'class',
+  plugins:[],
 }

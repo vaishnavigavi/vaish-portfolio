@@ -1,33 +1,79 @@
 import Image from 'next/image';
-import { assets, serviceData } from '@/assets/assets'
+import { workData, assets } from '@/assets/assets'
 import React from 'react'
+import tailwindConfig from '@/tailwind.config.js';
+import { motion, animate, scroll } from "motion/react";
 
-const Projects = () => {
+const Work = () => {
   return (
-    <div id='projects' className='w-full px-[12%] py-10 scroll-mt-20'>
-        <h4 className='text-center mb-2 text-lg font-Ovo'>my projects blah blah</h4>
-        <h2 className='text-center text-5xl font-Ovo'> My projects</h2>
+    <motion.div 
+    initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{duration:1}}
+    id='projects' className='w-full px-[12%] py-10 scroll-mt-20'>
+        <motion.h4 
+        initial={{opacity:0,y:-20}}
+        whileInView={{opacity:1,y:0}}
+        transition={{duration:0.5,delay:0.3}}
+        className='text-center mb-2 text-lg font-Ovo'>A Peek Into My Creations</motion.h4>
+        <motion.h2 
+        initial={{opacity:0,y:-20}}
+        whileInView={{opacity:1,y:0}}
+        transition={{duration:0.5,delay:0.5}}
+        className='text-center text-5xl font-Ovo'> Projects</motion.h2>
 
-        <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus delectus unde amet labore. Iusto, mollitia eos id exercitationem provident dolor?</p>
+        <motion.p 
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{duration:0.5,delay:0.7}}
+        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>A collection of projects where I applied creativity, code, and problem-solving to bring ideas to life</motion.p>
 
-        <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 my-10'>
-            {serviceData.map(({icon,title,description,link},index)=>(
-                <div key={index}
-                className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500'>
-                    <Image src={icon} alt="" className="w-10"/>
-                    <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
-                    <p className='text-sm text-gray-600 leading-5'>
-                        {description}
-                    </p>
-                    <a href={link} className='flex items-center gap-2 text-sm mt-5'>
-                        Read more <Image alt="" src={assets.right_arrow} className='w-4'/>
-                    </a>
+        <motion.div 
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{duration:0.6,delay:0.9}}
+        className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5'>
+            {workData.map((project,index)=>(
+                <motion.div 
+                whileHover={{ scale: 1.05 }}
+                key={index}
+                className='relative border border-gray-400 rounded-lg aspect-square overflow-hidden group cursor-pointer'>
+              
+                {/* Background icon – always faint */}
+                <Image 
+                  src={project.icon} 
+                  alt={`${project.title} background`} 
+                  fill 
+                  className='object-cover opacity-20' 
+                />
+              
+                {/* Content over translucent white box */}
+                <div className='absolute inset-0 flex items-end justify-center p-5'>
+                  <div className='bg-white/50 backdrop-blur-sm w-full rounded-md py-3 px-5 flex items-center justify-between shadow-lg transition-all duration-300 group-hover:-translate-y-2'>
+                    <div>
+                      <h1 className='font-semibold text-black'>{project.title}</h1>
+                      <p className='text-sm text-gray-800'>{project.description}</p>
+                    </div>
+                    <a 
+                        href={project.link} 
+                        target='_blank' 
+                        rel='noopener noreferrer'
+                        className='border border-black rounded-full w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'
+                        >
+                        <Image src={assets.send_icon} alt='send icon' className='w-5' />
+                        </a>
+
+                  </div>
                 </div>
+              </motion.div>
+              
+              
+              
             ))}
-        </div>
+        </motion.div>
 
-    </div>
+    </motion.div>
   )
 }
 
-export default Projects
+export default Work

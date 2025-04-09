@@ -35,6 +35,15 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import dashboard from './dashboard.png';
+import docker from './docker.png';
+import grafana from './Grafana.png';
+import vunet from './Vunet-Logo.png';
+import idfy from './footer-logo.svg';
+import development from './development.png';
+import student from './classroom.png';
+import dancepose from './girl.png';
+import stock from './stock.png';
 
 export const assets = {
     user_image,
@@ -73,45 +82,58 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    docker,
+    dashboard,
+    grafana,
+    vunet,
+    idfy,
+    development,
+    stock,
+    dancepose,
+    student
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Dance Pose Detection And Correction',
+        description: 'Real-time pose analysis and correction tool with instant feedback to improve dance form and accuracy.',
+        icon: assets.dancepose,
+        link:'https://github.com/vaishnavigavi/Dance-Pose-Detection-And-Correction'
+       
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Student Management System',
+        description: 'GUI-based app to manage student records and analyze academic performance.',
+        icon:assets.student,
+        link:'https://github.com/vaishnavigavi/student-management-system'
+        
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Stock Prediction',
+        description: 'ML-based model to forecast stock trends using historical data with clear visualizations.',
+        icon:assets.stock,
+        link:'https://github.com/vaishnavigavi/stock-prediction'
+        
     },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
+
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.vunet, title: 'Vunet Systems',timeline:'Apr 2024 - Mar 2025', description: 'Optimized data pipelines and transaction intelligence at scale by automating onboarding, building predictive models, and leading AI-powered chatbot initiatives. Enhanced business impact through insightful dashboards and NLP-driven user feedback analysis.', link: '' },
+    { icon: assets.idfy, title: 'IDfy',timeline:'Jan 2023 - Apr 2023', description: 'Built a robust, user-friendly dashboard using Elixir, React, and Node.js to streamline data insights. Delivered key frontend features and documentation to elevate user experience and internal collaboration.', link: '' },
+    { icon: assets.development, title: 'SDG',timeline:' Jun 2021 – Aug 2021', description: 'Developed a responsive result management platform with secure login and visual performance tracking. Simplified academic workflows while delivering an intuitive UI for administrators and students.', link: '' },
+    
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Technical skills', description: ' Python, C/C++, Java, SQL, JavaScript, HTML/CSS, React.js, Node.js, Next.js, PHP, PostgreSQL, MySQL, Clickhouse' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Soft skills', description: ' Problem-Solving, Critical Thinking, Creativity, Time Management, Teamwork, Communication, Adaptability' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.E. in Electronics Engineering\nCourses: Data Structures and Algorithms, Machine Learning, Networking, Databases, Data Science, Project Management' }
+    
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    
+    assets.vscode, assets.docker , assets.dashboard, assets.git, assets.grafana
 ];
