@@ -1,7 +1,7 @@
 import user_image from './user-image.png';
-import code_icon from './code-icon.png';
+import code_icon from './technicalskill.png';
 import code_icon_dark from './code-icon-dark.png';
-import edu_icon from './edu-icon.png';
+import edu_icon from './academic.png';
 import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
@@ -42,8 +42,13 @@ import vunet from './Vunet-Logo.png';
 import idfy from './footer-logo.svg';
 import development from './development.png';
 import student from './classroom.png';
-import dancepose from './girl.png';
-import stock from './stock.png';
+import dancepose from './dancing.png';
+import stock from './stock-market.png';
+import hindi from './hindi-logo.png';
+import marathi from './marathi.png';
+import english from './english.png'
+import kannada from './kannada.png';
+import softskill from './soft-skills.png'
 
 export const assets = {
     user_image,
@@ -91,7 +96,12 @@ export const assets = {
     development,
     stock,
     dancepose,
-    student
+    student,
+    kannada,
+    hindi,
+    english,
+    marathi,
+    softskill
 };
 
 export const workData = [
@@ -128,12 +138,23 @@ export const serviceData = [
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Technical skills', description: ' Python, C/C++, Java, SQL, JavaScript, HTML/CSS, React.js, Node.js, Next.js, PHP, PostgreSQL, MySQL, Clickhouse' },
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Soft skills', description: ' Problem-Solving, Critical Thinking, Creativity, Time Management, Teamwork, Communication, Adaptability' },
+    { icon: assets.softskill, iconDark: assets.code_icon_dark, title: 'Soft skills', description: ' Problem-Solving, Critical Thinking, Creativity, Time Management, Teamwork, Communication, Adaptability' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.E. in Electronics Engineering\nCourses: Data Structures and Algorithms, Machine Learning, Networking, Databases, Data Science, Project Management' }
     
 ];
 
 export const toolsData = [
-    
-    assets.vscode, assets.docker , assets.dashboard, assets.git, assets.grafana
-];
+    { icon: assets.vscode, name: 'VS Code' },
+    { icon: assets.docker, name: 'Docker' },
+    { icon: assets.dashboard, name: 'Dashboards' },
+    { icon: assets.git, name: 'Git' },
+    { icon: assets.grafana, name: 'Grafana' }
+  ];
+
+
+export const languageData = [
+    { icon: assets.english, name: 'English' },
+    { icon: assets.hindi, name: 'Hindi' },
+    { icon: assets.marathi, name: 'Marathi' },
+    { icon: assets.kannada, name: 'Kannada' }
+  ];
