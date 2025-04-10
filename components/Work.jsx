@@ -39,7 +39,12 @@ const Projects = () => {
                 transition={{duration:0.3}}
                 key={index}
                 className='border border-gray-400 rounded-lg px-8 py-8 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500'>
-                    <Image src={icon} alt="" className="w-10 h-5"/>
+                    <div className="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-md">
+                    <Image src={icon} alt="icon" width={100} height={100} className="object-contain" />
+                    </div>
+
+
+
                     <h3 className='text-lg mt-4 text-gray-700'>{title}</h3>
                     <h6 className="text-sm mb-4 text-gray-600">{timeline}</h6>
                     <p className='text-sm text-gray-600 leading-5'>
