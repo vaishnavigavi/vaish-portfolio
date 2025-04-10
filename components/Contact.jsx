@@ -46,11 +46,7 @@ const Contact = () => {
         transition={{duration:0.5,delay:0.5}} 
         className='text-center text-5xl font-Ovo'>Get in touch</motion.h2>
 
-    <motion.p 
-        initial={{opacity:0}}
-        whileInView={{opacity:1}}
-        transition={{duration:0.5,delay:0.7}} 
-        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus delectus unde amet labore. Iusto, mollitia eos id exercitationem provident dolor?</motion.p>
+    
     <motion.form 
     initial={{opacity:0}}
     whileInView={{opacity:1}}
