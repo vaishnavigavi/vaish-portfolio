@@ -49,6 +49,7 @@ import marathi from './marathi.png';
 import english from './english.png'
 import kannada from './kannada.png';
 import softskill from './soft-skills.png'
+import wallet from './digital-wallet.png';
 
 export const assets = {
     user_image,
@@ -101,10 +102,17 @@ export const assets = {
     hindi,
     english,
     marathi,
-    softskill
+    softskill,
+    wallet
 };
 
 export const workData = [
+    {
+        title: 'Portfolio Website',
+        description: 'Built a full-stack tool to detect anomalous Ethereum wallet activity using IsolationForest, with a FastAPI backend and interactive Next.js dashboard',
+        icon: assets.wallet,
+        link:'https://github.com/vaishnavigavi/onchain-guard'
+        },
     {
         title: 'Dance Pose Detection And Correction',
         description: 'Real-time pose analysis and correction tool with instant feedback to improve dance form and accuracy.',
