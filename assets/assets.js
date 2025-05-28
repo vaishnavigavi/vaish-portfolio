@@ -108,7 +108,7 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Portfolio Website',
+        title: 'On-Chain Guard',
         description: 'Built a full-stack tool to detect anomalous Ethereum wallet activity using IsolationForest, with a FastAPI backend and interactive Next.js dashboard',
         icon: assets.wallet,
         link:'https://github.com/vaishnavigavi/onchain-guard'
