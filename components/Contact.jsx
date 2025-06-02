@@ -68,7 +68,7 @@ const Contact = () => {
         initial={{opacity:0,y:100}}
         whileInView={{opacity:1,y:0}}
         transition={{duration:0.6,delay:1.3}}
-        rows="6"placeholder='Enter your messae'required className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6' name='message'></motion.textarea>
+        rows="6"placeholder='Enter your message'required className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6' name='message'></motion.textarea>
         <motion.button 
         whileHover={{scale:1.05}} 
         transition={{duration:0.3}}
